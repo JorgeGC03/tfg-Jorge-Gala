@@ -1,0 +1,27 @@
+.c-card{
+  --margin-cards:var(--margin-8);
+  box-shadow: 0 4px 6px hsla(0, 0%, 20%, 0.5);
+
+
+  //ASÍ SI
+  margin:var(--margin-cards);
+
+  &--bg-azul{
+    background-color: #1b7ead; //ESTO CON VARIABLES
+  }
+
+  &--bg-pink{
+    background-color: var(--color-reds-5);
+  }
+
+  &__title{
+    //ASÍ NO
+    color: #494949;
+    padding: 8px;
+
+    &--color-azul{
+      color: #1D4FD7;
+    }
+  }
+}
+

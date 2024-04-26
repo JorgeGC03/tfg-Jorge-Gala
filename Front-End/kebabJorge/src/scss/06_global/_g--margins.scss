@@ -1,0 +1,20 @@
+//@each $value in $margins {
+//  .g--margin-#{$value} {
+//    margin: $value;
+//  }
+//}
+
+//MODO VARIABLES
+:root{
+  @for $i from 1 through length($margins){
+    --margin-#{$i}:#{nth($margins, $i)}
+    }
+  }
+
+
+//@for $i from 1 through length($margins){
+//  .g--margin-#{$i}{
+//    margin:nth($margins, $i)
+//  }
+//}
+

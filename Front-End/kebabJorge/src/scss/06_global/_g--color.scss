@@ -1,0 +1,34 @@
+:root {
+
+  @each $key, $value in $colors{
+    $index : 0;
+    @each $color in $value{
+      $index: $index + 1;
+      --color-#{$key}-#{$index}:#{$color};
+    }
+  }
+}
+
+@each $key, $value in $colors{
+  $index : 0;
+  @each $color in $value{
+    $index: $index + 1;
+    .g--color-#{$key}-#{$index}{
+      color: $color;
+    }
+  }
+}
+
+
+
+@each $key, $value in $colors{
+  $index : 0;
+  @each $color in $value{
+    $index: $index + 1;
+    .g--background-color-#{$key}-#{$index}{
+      background-color: $color;
+    }
+  }
+}
+
+

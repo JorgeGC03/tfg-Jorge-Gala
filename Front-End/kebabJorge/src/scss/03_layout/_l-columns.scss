@@ -1,0 +1,40 @@
+.l-columns {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  @for $i from 1 to 12 {
+    &--#{$i} {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+}
+
+
+
+
+
+//.l-columns{
+//  display: grid;
+//  grid-template-columns: repeat(1, 1fr);
+//}
+//
+//.l-columns--2{
+//  display: grid;
+//  grid-template-columns: repeat(2, 1fr);
+//}
+//
+//.l-columns--3{
+//  display: grid;
+//  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+//  gap: 15px 10px;
+//}
+//
+//.l-columns--4{
+//  display: grid;
+//  grid-template-columns: repeat(4, 1fr);
+//}
+//
+//.l-columns--5{
+//  display: grid;
+//  grid-template-columns: repeat(5, 1fr);
+//}
