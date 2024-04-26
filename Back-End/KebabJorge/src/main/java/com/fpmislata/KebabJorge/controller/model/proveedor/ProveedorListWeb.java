@@ -5,8 +5,8 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 public class ProveedorListWeb {
-    int proveedorId;
-    String nombre; 
 
+    int proveedorId;
+    String nombre, contacto, direccion, email, descripcion, imageUrl;
 
 }

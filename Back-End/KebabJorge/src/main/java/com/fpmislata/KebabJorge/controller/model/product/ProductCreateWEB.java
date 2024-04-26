@@ -15,5 +15,6 @@ public class ProductCreateWEB {
     private String nombre, descripcion;
     private double precio;
     private int type;
+    private String imageUrl;
     private List<Integer> ingredientesIdWeb;
 }

@@ -23,6 +23,8 @@ public class Proveedor {
     @NotBlank(message = "el correo no puede estar en blanco")
     @ValidEmail
     private String email;
+    private String descripcion;
+    private String imageUrl;
 
 
     public Proveedor(String nombre, String contacto, String direccion, String email) {
@@ -32,4 +34,12 @@ public class Proveedor {
         this.email = email;
     }
 
+    public Proveedor(String nombre, String contacto, String direccion, String email, String descripcion, String imageUrl) {
+        this.nombre = nombre;
+        this.contacto = contacto;
+        this.direccion = direccion;
+        this.email = email;
+        this.descripcion = descripcion;
+        this.imageUrl = imageUrl;
+    }
 }

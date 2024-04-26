@@ -19,6 +19,7 @@ public class ProductEntity {
     private double precio;
     @Column(name = "tipo")
     private int type;
+    private String imageUrl;
 
 
     @ManyToMany(fetch = FetchType.LAZY)

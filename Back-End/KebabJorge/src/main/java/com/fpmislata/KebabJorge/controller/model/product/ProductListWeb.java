@@ -11,5 +11,7 @@ public class ProductListWeb {
 
     private int productoId;
     private String nombre;
+    private String imageUrl;
+
 
 }

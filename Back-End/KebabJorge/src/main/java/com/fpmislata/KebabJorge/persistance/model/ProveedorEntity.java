@@ -23,5 +23,5 @@ public class ProveedorEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int proveedorId;
-    private String nombre, contacto, direccion, email;
+    private String nombre, contacto, direccion, email, descripcion, imageUrl;
 }

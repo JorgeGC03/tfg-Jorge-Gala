@@ -1,13 +1,20 @@
 package com.fpmislata.KebabJorge.controller;
 
+import com.fpmislata.KebabJorge.controller.model.kebab.KebabCreateWEB;
+import com.fpmislata.KebabJorge.controller.model.kebab.KebabDetailWeb;
+import com.fpmislata.KebabJorge.controller.model.kebab.KebabListWeb;
+import com.fpmislata.KebabJorge.controller.model.kebab.KebabUpdateWEB;
 import com.fpmislata.KebabJorge.controller.model.product.ProductCreateWEB;
 import com.fpmislata.KebabJorge.controller.model.product.ProductDetailWeb;
 import com.fpmislata.KebabJorge.controller.model.product.ProductListWeb;
 import com.fpmislata.KebabJorge.controller.model.product.ProductUpdateWEB;
+import com.fpmislata.KebabJorge.domain.entity.Kebab;
 import com.fpmislata.KebabJorge.domain.entity.Product;
 import com.fpmislata.KebabJorge.domain.service.IngredientesService;
+import com.fpmislata.KebabJorge.domain.service.KebabService;
 import com.fpmislata.KebabJorge.domain.service.ProductService;
 import com.fpmislata.KebabJorge.http_response.Response;
+import com.fpmislata.KebabJorge.mapper.KebabMapper;
 import com.fpmislata.KebabJorge.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -13,38 +13,37 @@ import java.util.List;
 public class Product {
 
 
-    public Product(String nombre, String descripcion, double precio) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.precio = precio;
-    }
 
     private int productoId;
     private String nombre;
     private String descripcion;
     private double precio;
     private int type;
+    private String imageUrl;
     private List<Ingredientes> Ingredientes;
 
-    public Product(int productoId, String nombre, String descripcion, double precio, int type) {
+    public Product(int productoId, String nombre, String descripcion, double precio, int type, String imageUrl) {
         this.productoId = productoId;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
         this.type = type;
+        this.imageUrl = imageUrl;
     }
 
-    public Product(String nombre, String descripcion, double precio, int type) {
+    public Product(String nombre, String descripcion, double precio, int type, String imageUrl) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
         this.type = type;
+        this.imageUrl = imageUrl;
     }
 
-    public Product(int productoId, String nombre, String descripcion, double precio) {
+    public Product(int productoId, String nombre, String descripcion, double precio, String imageUrl) {
         this.productoId = productoId;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
+        this.imageUrl = imageUrl;
     }
 }

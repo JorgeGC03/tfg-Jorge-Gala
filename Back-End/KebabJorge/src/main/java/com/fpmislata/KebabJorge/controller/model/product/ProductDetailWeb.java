@@ -18,6 +18,7 @@ ProductDetailWeb {
     int productoId;
     private String nombre, descripcion;
     private double precio;
+    private String imageUrl;
     List<IngredientesListWeb> ingredientes;
     
 
