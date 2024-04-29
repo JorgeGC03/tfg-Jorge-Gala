@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { ProveedoresComponent } from './pages/proveedores/proveedores.component';
+import { TopBarComponent } from './modules/core/components/top-bar/top-bar.component';
 
 export const routes: Routes = [
   {
@@ -10,13 +11,25 @@ export const routes: Routes = [
     component: HomeComponent,
   },{
     path: 'productos',
-    component: ProductosComponent,
+    component: ProductosComponent
+  },{
+    path: 'productos/type:tipo',
+    component: ProductosComponent
   },{
     path: 'productos/:id',
-    component: ProductosComponent,
+    component: ProductosComponent
   },{
     path: 'proveedores',
-    component: ProveedoresComponent,
+    component: ProveedoresComponent
+  },{
+    path: 'proveedores/:id',
+    component: ProveedoresComponent
+  },{
+    path: 'topbar',
+    component: TopBarComponent,
+  },{
+    path: '**',
+    redirectTo: ''
   }
 ];
 

@@ -5,16 +5,43 @@
 //}
 
 //MODO VARIABLES
-:root{
-  @for $i from 1 through length($margins){
-    --margin-#{$i}:#{nth($margins, $i)}
+
+    
+@for $i from 1 through length($margins){
+    .g--margin-#{$i}{
+      margin:nth($margins, $i)
     }
   }
 
+  @for $i from 1 through length($margins){
+    .g--margin-bottom-#{$i}{
+      margin-bottom:nth($margins, $i)
+    }
+  }
 
-//@for $i from 1 through length($margins){
-//  .g--margin-#{$i}{
-//    margin:nth($margins, $i)
-//  }
-//}
+  @for $i from 1 through length($margins){
+    .g--margin-top-#{$i}{
+      margin-top:nth($margins, $i)
+    }
+  }
+
+  @for $i from 1 through length($margins){
+    .g--margin-left-#{$i}{
+      margin-left:nth($margins, $i)
+    }
+  }
+
+  @for $i from 1 through length($margins){
+    .g--margin-right-#{$i}{
+      margin-right:nth($margins, $i)
+    }
+  }
+
+  @for $i from 1 through length($margins){
+    .g--margin-right-bottom-#{$i}{
+      margin-right:nth($margins, $i);
+      margin-bottom:nth($margins, $i);
+
+    }
+  }
 

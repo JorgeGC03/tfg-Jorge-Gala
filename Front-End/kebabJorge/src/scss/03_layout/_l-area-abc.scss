@@ -1,0 +1,138 @@
+.l-area-3{
+    display: grid;
+
+
+    &__a{
+        grid-area: a;
+    }
+    &__b{
+        grid-area: b;
+    }
+    &__c{
+        grid-area: c;
+    }
+
+    &--abc-vertical{
+        grid-template-areas: 
+        'a'
+        'b'
+        'c';
+    }
+    &--bca-vertical{
+        grid-template-areas: 
+        'b'
+        'c'
+        'a';
+    }
+    &--cba-vertical{
+        grid-template-areas: 
+        'c'
+        'b'
+        'a';
+    }
+    &--cab-vertical{
+        grid-template-areas: 
+        'c'
+        'a'
+        'b';
+    }
+    &--bac-vertical{
+        grid-template-areas: 
+        'b'
+        'a'
+        'c';
+    }
+    &--acb-vertical{
+        grid-template-areas: 
+        'a'
+        'c'
+        'b';
+    }
+    &--abc-horizontal{
+        grid-template-areas: 
+        'a b c';
+    }
+    &--acb-horizontal{
+        grid-template-areas: 
+        'a c b';
+    }
+    &--bac-horizontal{
+        grid-template-areas: 
+        'b a c';
+    }
+    &--bca-horizontal{
+        grid-template-areas: 
+        'b c a';
+    }
+    &--cab-horizontal{
+        grid-template-areas: 
+        'c a b';
+    }
+    &--cba-horizontal{
+        grid-template-areas: 
+        'c b a';
+    }
+
+
+    @each $breakpoint , $valueBreakpoint in $breakpoints{
+        @media (min-width: $valueBreakpoint){
+                  
+            &--bca-vertical\@#{$breakpoint}{
+                grid-template-areas: 
+                'b'
+                'c'
+                'a';
+            }
+            &--cba-vertical\@#{$breakpoint}{
+                grid-template-areas: 
+                'c'
+                'b'
+                'a';
+            }
+            &--cab-vertical\@#{$breakpoint}{
+                grid-template-areas: 
+                'c'
+                'a'
+                'b';
+            }
+            &--bac-vertical\@#{$breakpoint}{
+                grid-template-areas: 
+                'b'
+                'a'
+                'c';
+            }
+            &--acb-vertical\@#{$breakpoint}{
+                grid-template-areas: 
+                'a'
+                'c'
+                'b';
+            }
+            &--abc-horizontal\@#{$breakpoint}{
+                grid-template-areas: 
+                'a b c';
+            }
+            &--acb-horizontal\@#{$breakpoint}{
+                grid-template-areas: 
+                'a c b';
+            }
+            &--bac-horizontal\@#{$breakpoint}{
+                grid-template-areas: 
+                'b a c';
+            }
+            &--bca-horizontal\@#{$breakpoint}{
+                grid-template-areas: 
+                'b c a';
+            }
+            &--cab-horizontal\@#{$breakpoint}{
+                grid-template-areas: 
+                'c a b';
+            }
+            &--cba-horizontal\@#{$breakpoint}{
+                grid-template-areas: 
+                'c b a';
+            }
+            
+        }
+    }
+}
+

@@ -1,16 +1,28 @@
 
-
+@import url("https://fonts.googleapis.com/css?family=Material+Icons+Round");
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
 
 @import
 '01_utilities/_variables';
 
 @import
-'03_layout/_l-columns';
+'03_layout/_l-columns.scss',
+'03_layout/l-area-ab.scss',
+'03_layout/l-centrar-div.scss',
+'03_layout/l-area-abc.scss';
 
 @import
 "04_components/_c-card.scss",
 "04_components/_c-button.scss",
-"04_components/c-title.scss";
+"04_components/c-title.scss",
+"04_components/c-topbar.scss",
+"04_components/c-desplegable.scss",
+"04_components/c-formulario.scss",
+"04_components/c-productoImagen.scss",
+"04_components/c-productos.scss",
+'04_components/c-listadoProductos.scss',
+"04_components/c-titulo-principal.scss",
+"04_components/c-logo.scss";
 
 //@import
 //'04_components/_c-card-service.scss',
@@ -22,9 +34,22 @@
 @import
 //'06_global/_g-padding.scss',
 '06_global/_g--margins.scss',
+'06_global/_g-paddings.scss',
 //'06_global/_g--bg-color-blue.scss',
 //'06_global/_g--text-uppercase.scss',
 //'06_global/_g--title-color.scss',
 //'06_global/g--background-color.scss',
 '06_global/_g--color.scss';
 //'06_global/g--opacity';
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #F5F5DC;
+}

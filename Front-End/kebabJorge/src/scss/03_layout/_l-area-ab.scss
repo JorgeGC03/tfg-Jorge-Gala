@@ -1,0 +1,65 @@
+.l-area{
+    display: grid;
+
+
+    &__a{
+        grid-area: a;
+    }
+    &__b{
+        grid-area: b;
+    }
+
+    &--ab-vertical{
+        grid-template-areas: 
+        'a'
+        'b';
+    }
+    &--ba-vertical{
+        grid-template-areas: 
+        'b'
+        'a';
+    }
+
+    &--ab-horizontal{
+        grid-template-areas: 
+        'a b';
+    }
+    
+    &--ba-horizontal{
+        grid-template-areas: 
+        'b a';
+    }
+
+
+    @each $breakpoint, $value in $breakpoints{
+        @media (min-width: $value){
+            &__a\@#{$breakpoint}{
+                grid-area: a;
+            }
+            &__b\@#{$breakpoint}{
+                grid-area: b;
+            }
+
+            &--ab-vertical{
+                grid-template-areas: 
+                'a'
+                'b';
+            }
+            &--ba-vertical{
+                grid-template-areas: 
+                'b'
+                'a';
+            }
+        
+            &--ab-horizontal{
+                grid-template-areas: 
+                'a b';
+            }
+            
+            &--ba-horizontal{
+                grid-template-areas: 
+                'b a';
+            }
+        }
+    }
+}

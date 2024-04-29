@@ -12,3 +12,12 @@ $colors: (
 
 
 $margins: 0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px;
+$paddings: 0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px;
+
+
+$breakpoints:(
+  'tablet':700px,
+  'desktop':900px,
+  'fulldesktop':1200px
+);
+

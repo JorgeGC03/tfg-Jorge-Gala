@@ -1,1 +1,14 @@
-<p>productos works!</p>
+<div class="l-columns l-columns--6@desktop l-centrarDiv">
+    <div class="c-listadoProductos g--margin-top-8 g-padding-right-8 g-padding-left-8 ">
+        <h1 class="c-titulo-principal g--margin-bottom-8">Listado de Productos</h1>
+        <div class="l-columns l-columns--6@tablet l-columns--12@desktop">
+            <!-- Aquí se muestran los productos -->
+            @for (producto of productos; track productos){
+                <div class="c-productos g-padding-top-8 g--margin-right-bottom-5" >
+                    <img class="c-productoImagen" [src]="producto.imageUrl" alt="{{ producto.nombre }}" />
+                    <h3>{{ producto.nombre }}</h3>
+                </div>
+            }
+        </div>
+    </div>
+</div>

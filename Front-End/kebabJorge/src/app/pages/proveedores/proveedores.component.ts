@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-proveedores',
@@ -9,6 +10,8 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './proveedores.component.html',
   styleUrl: './proveedores.component.scss'
 })
-export class ProveedoresComponent {
+export class ProveedoresComponent{
+
 
 }
+

@@ -1,1 +1,18 @@
-<p>top-bar works!</p>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="c-topbar">
+    <img class="c-logo" src="../../../assets/Kebab_jorge.png">
+    <div class="c-desplegable">
+        <button class="c-topbar c-topbar--opciones" routerLink="/productos">Carta</button>
+        <div class="c-desplegable--contenido">
+            <button class="c-topbar c-topbar--opciones" [routerLink]="['/productos']" [queryParams]="{ tipo: 2 }">Pizzas</button>
+            <button class="c-topbar c-topbar--opciones" [routerLink]="['/productos']" [queryParams]="{ tipo: 3 }">Kebabs</button>
+            <button class="c-topbar c-topbar--opciones" [routerLink]="['/productos']" [queryParams]="{ tipo: 4 }">Bebidas</button>
+        </div>
+    </div>
+    <button class="c-topbar c-topbar--opciones" routerLink="/sobre-nosotros">Sobre Nosotros</button>
+    <button class="c-topbar c-topbar--opciones" routerLink="/proveedores">Proveedores</button>
+    <button class="c-topbar c-topbar--opciones" routerLink="/contactanos">Contáctanos</button>
+    <button class="material-icons c-topbar c-topbar--account-options">shopping_cart</button>
+    <button class="material-icons c-topbar c-topbar--account-options">face</button>
+</div>

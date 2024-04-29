@@ -1,0 +1,29 @@
+.c-desplegable {
+        position: relative;
+        margin-left: 1em;
+
+        &:hover .c-desplegable--contenido {
+            display: block;
+        }
+        
+    }
+
+    .c-desplegable--contenido {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #9A5A2C;
+        z-index:30 !important;
+
+        .c-topbar--opciones {
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                background-color: #7B4623;
+            }
+        }
+    }

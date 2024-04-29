@@ -1,0 +1,31 @@
+    
+@for $i from 1 through length($paddings){
+    .g-padding-#{$i}{
+        padding:nth($paddings, $i)
+    }
+  }
+
+  @for $i from 1 through length($paddings){
+    .g-padding-bottom-#{$i}{
+        padding-bottom:nth($paddings, $i)
+    }
+  }
+
+  @for $i from 1 through length($paddings){
+    .g-padding-top-#{$i}{
+        padding-top:nth($paddings, $i)
+    }
+  }
+
+  @for $i from 1 through length($paddings){
+    .g-padding-left-#{$i}{
+        padding-left:nth($paddings, $i)
+    }
+  }
+
+  @for $i from 1 through length($paddings){
+    .g-padding-right-#{$i}{
+        padding-right:nth($paddings, $i)
+    }
+  }
+

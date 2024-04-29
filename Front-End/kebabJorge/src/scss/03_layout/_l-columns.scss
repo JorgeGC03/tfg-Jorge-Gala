@@ -1,40 +1,54 @@
 .l-columns {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns:repeat(1,1fr);
 
-  @for $i from 1 to 12 {
-    &--#{$i} {
-      grid-template-columns: repeat($i, 1fr);
+  &--1{
+    grid-template-columns:repeat(1,1fr);
+  }
+
+  &--2{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  &--3{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  &--4{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  &--5{
+    grid-template-columns:repeat(5,1fr);
+  }
+
+  &--6{
+    grid-template-columns:repeat(6,1fr);
+  }
+
+      //   &__area-span-1 {
+      //     grid-column: span 1;
+
+      // }
+
+      // &__area-span-2 {
+      //     grid-column: span 2;
+
+      // }
+
+
+
+
+  @each $breakpoint , $valueBreakpoint in $breakpoints{
+    @media (min-width: $valueBreakpoint){
+      @for $i from 1 through 6{
+        &--#{$i}\@#{$breakpoint}{
+            grid-template-columns:repeat(#{$i},1fr);
+        }
+        &__area--span-#{$i}\@#{$breakpoint}{
+          grid-column: span $i;
+        }
+      }
     }
   }
 }
-
-
-
-
-
-//.l-columns{
-//  display: grid;
-//  grid-template-columns: repeat(1, 1fr);
-//}
-//
-//.l-columns--2{
-//  display: grid;
-//  grid-template-columns: repeat(2, 1fr);
-//}
-//
-//.l-columns--3{
-//  display: grid;
-//  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-//  gap: 15px 10px;
-//}
-//
-//.l-columns--4{
-//  display: grid;
-//  grid-template-columns: repeat(4, 1fr);
-//}
-//
-//.l-columns--5{
-//  display: grid;
-//  grid-template-columns: repeat(5, 1fr);
-//}
