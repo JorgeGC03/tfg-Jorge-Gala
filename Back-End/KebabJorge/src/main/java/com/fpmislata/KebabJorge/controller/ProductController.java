@@ -47,7 +47,7 @@ public class ProductController {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/type={type}")
+    @GetMapping("/type{type}")
     public Response findAllByType(@PathVariable int type) {
         List<Product> products = productService.findAllByType(type);
         List<ProductListWeb> productListWeb = products.stream()
