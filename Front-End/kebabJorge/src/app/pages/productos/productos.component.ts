@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
 import { Product } from '../../models/product';
 import { ProductService } from '../../services/product.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -13,17 +13,32 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrl: './productos.component.scss'
 })
 export class ProductosComponent implements OnInit{
+  productos: Product[] = [];
+  tipoProducto!: number;
 
-  productos: Product[] = [];  
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.getAllProducts();
+    this.route.queryParams.subscribe(params => {
+      this.tipoProducto = params['tipo'];
+      if (this.tipoProducto) {
+        this.getProductosPorTipo(this.tipoProducto);
+      } else {
+        this.getAllProducts();
+      }
+    });
   }
 
-  getAllProducts(){
+  getAllProducts() {
     this.productService.getAllProducts().subscribe(response => {
       this.productos = response.data;
     });
   }
+
+  getProductosPorTipo(tipo: number) {
+    this.productService.getProductosPorTipo(tipo).subscribe(response => {
+      this.productos = response.data;
+    });
+  }
+
 }

@@ -5,9 +5,10 @@
     <div class="c-desplegable">
         <button class="c-topbar c-topbar--opciones" routerLink="/productos">Carta</button>
         <div class="c-desplegable--contenido">
-            <button class="c-topbar c-topbar--opciones" [routerLink]="['/productos']" [queryParams]="{ tipo: 2 }">Pizzas</button>
-            <button class="c-topbar c-topbar--opciones" [routerLink]="['/productos']" [queryParams]="{ tipo: 3 }">Kebabs</button>
-            <button class="c-topbar c-topbar--opciones" [routerLink]="['/productos']" [queryParams]="{ tipo: 4 }">Bebidas</button>
+            <button class="c-topbar c-topbar--opciones" (click)="filtrarProductos(2)">Pizzas</button>
+            <button class="c-topbar c-topbar--opciones" (click)="filtrarProductos(1)">Kebabs</button>
+            <button class="c-topbar c-topbar--opciones" (click)="filtrarProductos(3)">Bebidas</button>
+            <button class="c-topbar c-topbar--opciones" (click)="filtrarProductos(4)">Sin Glúten</button>
         </div>
     </div>
     <button class="c-topbar c-topbar--opciones" routerLink="/sobre-nosotros">Sobre Nosotros</button>

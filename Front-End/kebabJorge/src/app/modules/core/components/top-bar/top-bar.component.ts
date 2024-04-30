@@ -6,6 +6,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { Router, RouterModule } from '@angular/router';
 import { ProductosComponent } from '../../../../pages/productos/productos.component';
 import { ProductService } from '../../../../services/product.service';
+import { Product } from '../../../../models/product';
 
 
 
@@ -18,8 +19,12 @@ import { ProductService } from '../../../../services/product.service';
 })
 export class TopBarComponent {
 
-  constructor(private router: Router, private productService: ProductService) { }
+  productos: Product[] = [];  
 
+  constructor(private router: Router) { }
 
+  filtrarProductos(tipo: number) {
+    this.router.navigate(['/productos'], { queryParams: { tipo: tipo } });
+  }
 
 }
