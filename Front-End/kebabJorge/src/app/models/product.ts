@@ -5,4 +5,6 @@ export interface Product {
   precio: number;
   tipo: number;
   imageUrl: string;
+  ingredientes: string[];
+  quantity: number;
 }

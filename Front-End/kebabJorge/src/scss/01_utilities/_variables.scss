@@ -6,9 +6,10 @@ $colors: (
         "reds": (#FEE1E1, #FEC8C8, #FCA6A6, #F87272, #EF4343, #DC2828, #BA1C1C, #981B1B, #811D1D),
         "greens": (#E3F9E5, #C5EBCA, #A6DDAF, #84CE96, #61BE7E, #47A766, #3D9149, #317A3C, #2B6B34),
         "blues": (#DDEEFB, #BDD7F8, #97BFF5, #6D9EEB, #4D7DDA, #375CC5, #2F4FBF, #263D9C, #1F3182),
-        "yellows": (#FEF9C8, #FEF08A, #FDE047, #FACC15, #E9B814, #D4A013, #B7830F, #975A16, #7C421F)
+        "yellows": (#FEF9C8, #FEF08A, #FDE047, #FACC15, #E9B814, #D4A013, #B7830F, #975A16, #7C421F, #e0e0c5)
 );
 
+$g-color-backgroundId: #e0e0c5;
 
 
 $margins: 0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px;
@@ -16,8 +17,8 @@ $paddings: 0px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 6
 
 
 $breakpoints:(
-  'tablet':700px,
-  'desktop':900px,
-  'fulldesktop':1200px
+  'tablet':900px,
+  'desktop':1500px,
+  'fulldesktop':1500px
 );
 

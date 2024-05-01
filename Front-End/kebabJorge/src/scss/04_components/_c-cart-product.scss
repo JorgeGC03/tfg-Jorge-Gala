@@ -1,0 +1,12 @@
+.c-cart-product {
+    height: 300px;
+}
+
+.c-cart-product__image {
+    height: 250px;
+    width: 300px;
+    padding-top: 5%; /* Sin relleno en la parte superior */
+    padding-right: 5%; /* 10% de relleno en el lado derecho */
+    padding-bottom: 5%; /* 10% de relleno en la parte inferior */
+    padding-left: 5%; /* 10% de relleno en el lado izquierdo */
+}

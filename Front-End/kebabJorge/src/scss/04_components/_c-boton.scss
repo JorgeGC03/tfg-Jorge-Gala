@@ -1,0 +1,66 @@
+.c-boton{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px;
+
+    &__option-cart{
+        max-width: 150px; /* Ajusta el ancho máximo según tus necesidades */
+        height: 30px;
+        width: 100;
+        border-radius: 5px;
+        
+        &--borrar{
+            background-color: rgb(177, 66, 66);
+            color: white;
+        }
+    }
+
+    &--succes{
+        background-color: rgb(53, 142, 53);
+        color: white;
+    }
+
+    &--cart{
+        background-color: rgb(161, 218, 76);
+        color: black;
+    }
+
+    &--danger{
+        background-color: rgb(210, 40, 40);
+        color: white;
+    }
+    
+    &--warning{
+        background-color: #e2b42b;
+        color: black;
+    }
+    
+    &--info{
+        background-color: rgb(106, 179, 225);
+        color: white;
+    }
+    
+    &--light{
+        background-color: rgb(238, 228, 228);
+        color: black;
+        border: none;
+    }
+    
+    &--dark{
+        background-color: rgb(68, 65, 65);
+        color: white;
+    }
+    
+    &--link{
+        color: rgb(33, 107, 204);
+        background-color: transparent ;
+        border: none;
+    }
+    
+    &--primary{
+        background-color: rgb(183, 117, 36);
+        color: black;
+    }
+}

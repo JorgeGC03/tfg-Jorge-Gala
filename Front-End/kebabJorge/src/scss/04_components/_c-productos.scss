@@ -9,6 +9,6 @@
 
     &:hover {
         transform: scale(1.02); /* Escala del elemento al pasar el mouse */
-        background-color: #D3D3D3; /* Cambio de color de fondo al pasar el mouse */
+        background-color: $g-color-backgroundId;
     }
 }

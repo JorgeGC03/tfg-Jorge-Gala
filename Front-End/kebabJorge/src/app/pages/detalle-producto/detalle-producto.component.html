@@ -1,0 +1,31 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div *ngIf="producto">
+    <div class="l-centrar">
+        <div class="c-seccion-producto g--margin-top-8 g-padding-left-15 c-boxshadow">
+            <h1 class="c-titulo-principal">{{ producto.nombre.toLocaleUpperCase() }}</h1>
+            <div class="l-columns l-columns--2@tablet l-columns--2@desktop">
+                <div><img class="c-productoImagen__id g--margin-top-8 g-padding-left-5" [src]="producto.imageUrl"
+                        alt="{{ producto.nombre }}"></div>
+                <div class="">
+                    <p><b>Descripción: </b></p>
+                    <p>{{ producto.descripcion }}</p>
+
+                    <h3>Ingredientes</h3>
+                    <ol>
+                        @for (ingrediente of producto.ingredientes; track producto.ingredientes) {
+                        <li>{{ ingrediente }}</li>
+                        }
+                    </ol>
+                    <p><b>Precio: </b> {{ producto.precio }} €</p>
+                </div>
+            </div>
+            <div class="l-centrar__derecha g-padding-right-21 g-padding-bottom-11">
+                <button class="material-icons c-boton c-boton--cart" (click)="addToCart()">shopping_cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!producto">
+    <p>Producto no encontrado.</p>
+</div>

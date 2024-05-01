@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { Product } from '../../models/product';
 import { ProductService } from '../../services/product.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,7 +16,7 @@ export class ProductosComponent implements OnInit{
   productos: Product[] = [];
   tipoProducto!: number;
 
-  constructor(private productService: ProductService, private route: ActivatedRoute) { }
+  constructor(private productService: ProductService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
@@ -39,6 +39,12 @@ export class ProductosComponent implements OnInit{
     this.productService.getProductosPorTipo(tipo).subscribe(response => {
       this.productos = response.data;
     });
+  }
+
+  verDetalleProducto(id: number) {
+    this.router.navigate(['/productos', id]);
+    console.log('Ver detalle del producto con ID:', id);
+
   }
 
 }
