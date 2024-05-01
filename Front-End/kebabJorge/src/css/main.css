@@ -235,6 +235,19 @@
   justify-content: flex-end;
 }
 
+.l-centrar__centro {
+  display: flex;
+  justify-content: center;
+}
+
+.l-centrar__texto {
+  text-align: center;
+}
+
+.l-fondo-kebab {
+  background-color: #e0e0c5;
+}
+
 .l-area-3 {
   display: grid;
 }
@@ -449,6 +462,21 @@
   margin-left: 0.2em;
 }
 
+.c-footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #9A5A2C;
+  color: #ffffff;
+}
+.c-footer--text {
+  margin-bottom: 10px; /* Espacio entre los dos párrafos */
+  color: #000;
+}
+.c-footer--link {
+  color: rgb(20, 57, 104);
+  text-decoration: underline; /* Subrayar el enlace */
+}
+
 .c-desplegable {
   position: relative;
   margin-left: 1em;
@@ -480,12 +508,12 @@
 }
 
 .c-cart-product__image {
-  height: 250px;
-  width: 300px;
-  padding-top: 5%; /* Sin relleno en la parte superior */
+  height: 200px;
+  width: 250px;
+  padding-top: 10%; /* Sin relleno en la parte superior */
   padding-right: 5%; /* 10% de relleno en el lado derecho */
   padding-bottom: 5%; /* 10% de relleno en la parte inferior */
-  padding-left: 5%; /* 10% de relleno en el lado izquierdo */
+  padding-left: 20%; /* 10% de relleno en el lado izquierdo */
 }
 
 .c-formulario {
@@ -530,7 +558,6 @@
 
 .c-listadoProductos {
   background-color: #e0e0c5;
-  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.75); /* Agrega una sombra negra fuerte */
 }
 
 .c-boton {

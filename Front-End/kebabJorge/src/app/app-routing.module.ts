@@ -6,6 +6,7 @@ import { ProveedoresComponent } from './pages/proveedores/proveedores.component'
 import { TopBarComponent } from './modules/core/components/top-bar/top-bar.component';
 import { DetalleProductoComponent } from './pages/detalle-producto/detalle-producto.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
+import { ErrorComponent } from './modules/core/components/error/error.component';
 
 export const routes: Routes = [
   {
@@ -34,7 +35,7 @@ export const routes: Routes = [
     component: TopBarComponent,
   },{
     path: '**',
-    redirectTo: ''
+    component: ErrorComponent,
   }
 ];
 

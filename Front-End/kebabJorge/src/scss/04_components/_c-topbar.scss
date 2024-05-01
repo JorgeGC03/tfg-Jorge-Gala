@@ -20,3 +20,23 @@
     }
 
 }
+    .c-footer {
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #9A5A2C;
+        color: #ffffff;
+
+        &--text {
+            margin-bottom: 10px; /* Espacio entre los dos párrafos */
+            color: #000;
+        }
+
+        &--link {
+            color: rgb(20, 57, 104);
+            text-decoration: underline; /* Subrayar el enlace */
+        }
+    }
+    
+    
+
+
