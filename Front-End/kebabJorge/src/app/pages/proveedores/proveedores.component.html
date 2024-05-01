@@ -1,5 +1,28 @@
-<div class="c-listadoProductos c-boxshadow g--margin-bottom-8 g--margin-left-15 g--margin-right-15 g--margin-top-10">
-    <div class="l-centrar__texto">
-        <h1 class="c-titulo-principal g-padding-top-7 g-padding-bottom-7">Nuestros proveedores</h1>
+<h1 class="c-titulo-principal g--margin-bottom-8">Mi Carrito</h1>
+<hr />
+<div class="l-centrar">
+    <div class=" g--margin-top-8">
+        <div *ngIf="proveedores.length > 0; else emptyProviders">
+            <div class="c-listadoProductos c-boxshadow g--margin-bottom-8">
+                <div class="l-columns l-columns--3@tablet l-columns--4@desktop">
+                    @for (proveedor of proveedores; track proveedores){
+                    <div class="l-columns l-columns--1@tablet">
+                        <img class="c-cart-product__image" [src]="proveedor.imageUrl" alt="{{ proveedor.nombre }}">
+                    </div>
+                    <div class="c-cart-product l-columns__area--span-2@tablet l-columns__area--span-3@desktop">
+                    <div class="c-titulo__secundario g-padding-top-10"><b>{{ proveedor.nombre.toUpperCase() }}</b></div>
+                    <div class="c-titulo__subtitulo g--margin-top-7"> <b> Teléfono: </b> {{ proveedor.contacto }}</div>
+                    <div class="c-titulo__subtitulo g--margin-top-7"><b> Dirección: </b> {{ proveedor.direccion }}</div>
+                    <div class="c-titulo__subtitulo g--margin-top-7"><b> Email: </b> {{ proveedor.email }}</div>
+                    <div class="c-titulo__subtitulo g--margin-top-7"><b> Descripción: </b> {{ proveedor.descripcion }}</div>
+                </div>
+                    }
+            </div>
+        </div>
     </div>
 </div>
+
+
+<ng-template #emptyProviders>
+    <div class="c-titulo__secundario l-centrar__texto g--margin-bottom-7">No hay ningun proveedor</div>
+</ng-template>

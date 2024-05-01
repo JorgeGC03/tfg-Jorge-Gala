@@ -9,7 +9,7 @@ import { DetalleProductoComponent } from '../detalle-producto/detalle-producto.c
 @Component({
   selector: 'app-carrito',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HttpClientModule, ProductosComponent, DetalleProductoComponent, CarritoComponent],
+  imports: [RouterOutlet, CommonModule, HttpClientModule],
   templateUrl: './carrito.component.html',
   styleUrl: './carrito.component.scss'
 })
