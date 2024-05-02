@@ -12,7 +12,6 @@ import { CarritoComponent } from '../../../../pages/carrito/carrito.component';
   standalone: true,
   imports: [CommonModule, HttpClientModule,  MatMenuModule, RouterModule, CarritoComponent],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
 

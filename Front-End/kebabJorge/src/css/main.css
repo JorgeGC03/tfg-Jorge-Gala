@@ -437,11 +437,6 @@
   --text-color: var(--color-reds-5);
 }
 
-.c-title {
-  color: black;
-  background-color: var(--color-yellows-4);
-}
-
 .c-topbar {
   display: flex;
   justify-content: center;
@@ -619,16 +614,23 @@
 .c-titulo-principal {
   text-align: center;
   font-size: 2rem;
-  font-weight: bold;
+}
+.c-titulo-principal--center {
+  text-align: center;
 }
 
 .c-titulo__secundario {
   font-size: 1.5em;
-  font-weight: bolder;
+}
+.c-titulo__secundario--center {
+  text-align: center;
 }
 
 .c-titulo__subtitulo {
   font-size: 1em;
+}
+.c-titulo__subtitulo--center {
+  text-align: center;
 }
 
 .c-seccion-producto {

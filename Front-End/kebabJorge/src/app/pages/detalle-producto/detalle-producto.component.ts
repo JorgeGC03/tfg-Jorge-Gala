@@ -12,7 +12,6 @@ import { delay, timeout } from 'rxjs';
   standalone: true,
   imports: [RouterOutlet, CommonModule, HttpClientModule, ProductosComponent],
   templateUrl: './detalle-producto.component.html',
-  styleUrl: './detalle-producto.component.scss'
 })
 export class DetalleProductoComponent implements OnInit {
 

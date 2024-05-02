@@ -1,14 +1,24 @@
 .c-titulo-principal{
     text-align: center;
     font-size: 2rem;
-    font-weight: bold;
+
+    &--center{
+        text-align: center;
+    }
 }
 
 .c-titulo__secundario{
     font-size: 1.5em;
-    font-weight: bolder;
+
+    &--center{
+        text-align: center;
+    }
 }
 
 .c-titulo__subtitulo{
     font-size: 1em;
+
+    &--center{
+        text-align: center;
+    }
 }

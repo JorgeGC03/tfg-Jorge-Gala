@@ -8,9 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-productos',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HttpClientModule ],
+  imports: [RouterOutlet, CommonModule, HttpClientModule],
   templateUrl: './productos.component.html',
-  styleUrl: './productos.component.scss'
 })
 export class ProductosComponent implements OnInit{
   productos: Product[] = [];

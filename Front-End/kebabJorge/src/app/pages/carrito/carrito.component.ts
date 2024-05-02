@@ -11,7 +11,6 @@ import { DetalleProductoComponent } from '../detalle-producto/detalle-producto.c
   standalone: true,
   imports: [RouterOutlet, CommonModule, HttpClientModule],
   templateUrl: './carrito.component.html',
-  styleUrl: './carrito.component.scss'
 })
 export class CarritoComponent implements OnInit {
   cartItems: Product[] = [];
