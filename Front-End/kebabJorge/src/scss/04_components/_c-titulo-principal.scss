@@ -22,3 +22,14 @@
         text-align: center;
     }
 }
+
+.c-texto-centrar{
+    text-align: center; 
+    
+    
+    &--verticalmente{
+        display: flex;
+        align-items: center;
+        height: 65%;
+    }
+}

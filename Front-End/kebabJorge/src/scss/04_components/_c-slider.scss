@@ -1,0 +1,51 @@
+.c-slider {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+    border-radius: 50px;
+
+    &--frame {
+        max-width: 700px;
+        max-height: 400px; // Establece el ancho máximo y alto para las imágenes
+        margin: 50px auto; // Centra el contenedor en la página
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            padding: 0;
+            width: 400%;
+            animation: slide 15s infinite alternate ease-in-out;
+        }
+
+        li {
+            width: 25%; // Establece el ancho al 25% para mostrar 4 imágenes en una fila
+            list-style: none;
+            text-align: center; // Centra las imágenes horizontalmente
+        }
+
+        img {
+            width: 100%; // Establece el ancho al 100%
+            height: 100%; // Ajusta la altura automáticamente
+            object-fit: cover; // Ajusta la imagen para que llene el contenedor
+        }
+    }
+
+    &__background {
+        background-image: url("../../assets/fondo-mesa.jpg");
+        background-repeat: no-repeat; // La imagen de fondo no se repetirá
+        background-size: cover; // La imagen de fondo cubrirá todo el contenedor
+        width: 100%; // Ocupa todo el ancho del contenedor
+        height: 100%; // Ocupa todo el alto del contenedor
+    }
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}

@@ -1,0 +1,8 @@
+.c-etiquetas{
+    min-height: 325px;
+    background-color: $g-color-lightOrange;
+
+    &:hover{
+        transform: scale(1.02);
+    }
+}
