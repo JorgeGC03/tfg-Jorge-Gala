@@ -2,7 +2,7 @@
 <hr />
 <div class="l-centrar">
     <div class=" g--margin-top-8">
-        <div *ngIf="cartItems.length > 0; else emptyCart">
+        @if(cartItems.length > 0){
             <div class="c-listadoProductos c-boxshadow g--margin-bottom-8">
                 <div class="l-columns l-columns--3@tablet l-columns--4@desktop">
                     @for (item of cartItems; track cartItems ;let i = $index){
@@ -29,18 +29,15 @@
                 </div>
                 <div class="l-centrar__derecha">
                     <div class=" g--margin-right-10 g--margin-bottom-5 c-titulo__secundario">
-                        Total: {{ totalPrice | number:'1.2-2' }} €
+                        Total: {{ totalPrice }} €
                     </div>
                 </div>
                 <div class="l-centrar__derecha">
                     <button class="c-boton c-boton--succes g-padding-5 g--margin-right-13 g--margin-bottom-10" >Pedir</button>
                 </div>
             </div>
-        </div>
+        } @else () {
+            <div class="c-titulo__secundario l-centrar__texto g--margin-bottom-7">No hay elementos en el carrito</div>
+        }
     </div>
 </div>
-
-    
-<ng-template #emptyCart>
-    <div class="c-titulo__secundario l-centrar__texto g--margin-bottom-7">No hay elementos en el carrito</div>
-</ng-template>

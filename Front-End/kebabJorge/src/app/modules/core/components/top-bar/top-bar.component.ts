@@ -1,9 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
-import { Router, RouterModule } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ProductosComponent } from '../../../../pages/productos/productos.component';
 import { Product } from '../../../../models/product';
 
@@ -12,7 +8,7 @@ import { Product } from '../../../../models/product';
 @Component({
   selector: 'app-top-bar',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, MatIconModule, MatMenuModule, RouterModule, ProductosComponent],
+  imports: [ ProductosComponent, RouterLink],
   templateUrl: './top-bar.component.html',
 })
 export class TopBarComponent {

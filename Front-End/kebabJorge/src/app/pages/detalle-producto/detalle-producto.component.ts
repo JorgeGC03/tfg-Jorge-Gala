@@ -2,15 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../models/product';
 import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { ProductService } from '../../services/product.service';
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { ProductosComponent } from '../productos/productos.component';
-import { delay, timeout } from 'rxjs';
 
 @Component({
   selector: 'app-detalle-producto',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HttpClientModule, ProductosComponent],
+  imports: [RouterOutlet, ProductosComponent],
   templateUrl: './detalle-producto.component.html',
 })
 export class DetalleProductoComponent implements OnInit {

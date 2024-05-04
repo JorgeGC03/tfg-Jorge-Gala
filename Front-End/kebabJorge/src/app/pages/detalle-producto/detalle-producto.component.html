@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<div *ngIf="producto">
+@if (producto){
     <div class="l-centrar">
         <div class="c-seccion-producto g--margin-top-8 g-padding-left-15 c-boxshadow">
             <h1 class="c-titulo-principal">{{ producto.nombre.toLocaleUpperCase() }}</h1>
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-</div>
-<div *ngIf="!producto">
+}
+@if(!producto){
     <p>Producto no encontrado.</p>
-</div>
+}

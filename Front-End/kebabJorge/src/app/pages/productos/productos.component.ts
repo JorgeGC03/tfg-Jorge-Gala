@@ -1,14 +1,12 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { Product } from '../../models/product';
 import { ProductService } from '../../services/product.service';
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-productos',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HttpClientModule],
+  imports: [RouterOutlet],
   templateUrl: './productos.component.html',
 })
 export class ProductosComponent implements OnInit{

@@ -1,15 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../models/product';
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 import { RouterOutlet } from '@angular/router';
-import { ProductosComponent } from '../productos/productos.component';
-import { DetalleProductoComponent } from '../detalle-producto/detalle-producto.component';
 
 @Component({
   selector: 'app-carrito',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HttpClientModule],
+  imports: [RouterOutlet],
   templateUrl: './carrito.component.html',
 })
 export class CarritoComponent implements OnInit {

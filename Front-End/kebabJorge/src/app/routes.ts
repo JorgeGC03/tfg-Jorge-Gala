@@ -1,6 +1,4 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { Routes } from '@angular/router';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { ProveedoresComponent } from './pages/proveedores/proveedores.component';
 import { TopBarComponent } from './modules/core/components/top-bar/top-bar.component';
@@ -46,9 +44,3 @@ export const routes: Routes = [
     component: ErrorComponent,
   }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],  
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
