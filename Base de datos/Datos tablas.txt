@@ -1,0 +1,570 @@
+-- proveedor
+
+-- PROVEEDOR
+-- Insertar datos de proveedores
+INSERT INTO proveedor (proveedorId, nombre, contacto, direccion, email, descripcion, imageUrl) 
+VALUES 
+(1, 'Proveedor Tomate', '5551111111', 'Dirección del Tomate', 'tomate@proveedor.com', '¡Donde cada tomate es un pequeño sol en tu plato! ¡Preparados para darle un toque jugoso y colorido a tus recetas!', 'https://proain.com/cdn/shop/articles/Condiciones_ambientales_optimas_para_el_cultivo_de_tomate.jpg?v=1599601661'),
+(2, 'Proveedor Salmon', '5552222222', 'Dirección del Salmon', 'salmon@proveedor.com', 'Nadando desde los fríos mares del norte, nuestro salmón te transportará a aguas cristalinas y sabores frescos. ¡Es como un abrazo del océano en cada bocado!', 'https://neerlandia.com/wp-content/uploads/2021/01/Zalm-staart-3-stukken.jpg'),
+(3, 'Proveedor Gambas', '5553333333', 'Dirección de las Gambas', 'gambas@proveedor.com', '¿Listo para un viaje a la costa con cada bocado? Nuestras gambas te llevarán directamente a la orilla del mar con su sabor fresco y su textura delicada.', 'https://blancamar.es/wp-content/uploads/2022/01/gamba-arrocera_02-1.jpg'),
+(4, 'ProveedorSalsaBlanca', '5554444444', 'Dirección de la Salsa Blanca', 'salsablanca@proveedor.com', '¡Sumérgete en la suavidad cremosa de nuestra salsa blanca! Perfecta para acompañar tus platos favoritos con un toque de indulgencia.', 'https://acdn.mitiendanube.com/stores/001/157/846/products/579939-800-auto1-77be349aaaf33a051b16311284215754-640-0.jpg'),
+(5, 'Proveedor Ketchup', '5555555555', 'Dirección del Ketchup', 'ketchup@proveedor.com', 'El toque clásico que nunca pasa de moda. Nuestro ketchup es la combinación perfecta de dulzura y acidez para realzar cualquier comida.', 'https://www.elfinanciero.com.mx/resizer/Ybai0p815HKtvVkH580tdpaogTI=/1440x810/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/5ZZIPXGKEFCBXGFTSU4VA7RZFY.jpg'),
+(6, 'Proveedor Mayonesa', '5556666666', 'Dirección de la Mayonesa', 'mayonesa@proveedor.com', '¡Untuosa y deliciosa, nuestra mayonesa te hará decir "mmm" en cada bocado! Acompaña tus platos favoritos con esta crema de sabor irresistible.', 'https://i.blogs.es/8a4ab6/mayonesa_rec/450_1000.jpg'),
+(7, 'Proveedor Salsa Barbacoa', '5557777777', 'Dirección de la Salsa Barbacoa', 'salsabarbacoa@proveedor.com', '¡El sabor ahumado y dulce de nuestra salsa barbacoa te transportará directamente a una tarde de parrillada con amigos y familiares!', 'https://www.aceitesdeolivadeespana.com/wp-content/uploads/2023/07/AdobeStock_271099773-1.jpeg'),
+(8, 'Proveedor Champiñones', '5558888888', 'Dirección de los Champiñones', 'champinones@proveedor.com', '¡Los champiñones frescos de nuestro proveedor te llevarán al bosque con cada bocado! Añade un toque terroso y delicioso a tus platos.', 'https://imag.bonviveur.com/incorporar-los-champinones-laminados-a-la-sarten.jpg'),
+(9, 'Proveedor Pollo', '5559999999', 'Dirección del Pollo', 'pollo@proveedor.com', 'Nuestro pollo fresco y jugoso es perfecto para cualquier receta que puedas imaginar. ¡Dale alas a tu cocina con la calidad de nuestro pollo!', 'https://imagenes.elpais.com/resizer/8yjxnRz2NrGKU8cCFUM_UhAxS9s=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/4HWUG3I7PVA7VKAWLQVCBUL4E4.jpg'),
+(10, 'Proveedor Carne de Pollo Picada', '5550000000', 'Dirección de la Carne Picada de Pollo', 'carnepicada@proveedor.com', '¡La opción más versátil para tus recetas favoritas! Nuestra carne picada de pollo te ofrece una alternativa saludable y deliciosa.', 'https://danielsalinas.es/wp-content/uploads/2022/10/PICADA-DE-POLLO-086050-2-scaled.jpg'),
+(11, 'Proveedor Bacon', '5551234567', 'Dirección del Bacon', 'bacon@proveedor.com', '¡El ingrediente imprescindible para cualquier plato delicioso! Nuestro bacon crujiente y sabroso añadirá un toque de sabor irresistible a tus comidas.', 'https://images.immediate.co.uk/production/volatile/sites/30/2019/11/Bacon-rashers-in-a-pan-72c07f4.jpg?resize=700%2C366'),
+(12, 'Proveedor Queso De Cabra', '5552345678', 'Dirección del Queso Cabra', 'quesocabra@proveedor.com', 'El queso de cabra de nuestro proveedor es una explosión de sabor en cada bocado. ¡Añade un toque de sofisticación a tus platos con este queso cremoso y delicioso!', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBjUfOaRLlJJcjpV_E9UOemiatji7e98ZuGhvkh6xJWA&s'),
+(13, 'Proveedor Cebolla', '5553456789', 'Dirección de la Cebolla', 'cebolla@proveedor.com', 'La cebolla fresca y crujiente de nuestro proveedor es el toque perfecto para cualquier plato. ¡Añade un toque de sabor dulce y un toque de picante a tus recetas favoritas!', 'https://s1.eestatic.com/2019/06/10/como/como_hacer_405220778_125189630_1706x960.jpg'),
+(14, 'Proveedor Ternera', '5554567890', 'Dirección de la Ternera', 'ternera@proveedor.com', '¡Nuestra ternera de calidad premium es la elección perfecta para tus platos de carne favoritos! Tierna, jugosa y llena de sabor, cada bocado es una experiencia culinaria.', 'https://mercadodenumancia.es/wp-content/uploads/2022/06/Que-piezas-pueden-sacar-de-la-ternera.jpg'),
+(15, 'ProveedorPatatas', '5555678901', 'Dirección de las Patatas', 'patatas@proveedor.com', '¡Las patatas frescas y crujientes de nuestro proveedor te llevarán al cielo de los carbohidratos! Perfectas para freír, asar, hervir o cualquier otra preparación.', 'https://s1.eestatic.com/2020/10/09/ciencia/nutricion/patatas-adelgazar-dieta_526958892_162156518_1706x960.jpg'),
+(16, 'Proveedor JamonYork', '5556789012', 'Dirección del Jamón York', 'jamon@proveedor.com', '¡El jamón de York de nuestro proveedor es la estrella de cualquier sándwich o ensalada! Delicadamente salado y lleno de sabor, cada loncha es un bocado delicioso.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Jam%C3%B3n_dulce-01.JPG/1200px-Jam%C3%B3n_dulce-01.JPG'),
+(17, 'Proveedor Huevo', '5557890123', 'Dirección del Huevo', 'huevo@proveedor.com', 'Nuestros huevos frescos de granja te ofrecen la mejor calidad y sabor en cada desayuno, brunch o receta que elijas. ¡La opción perfecta para tus necesidades de cocina!', 'https://www.diariodesevilla.es/2023/12/14/salud/nutricion-bienestar/Cesta-huevos_1857124304_199204628_667x375.png'),
+(18, 'Proveedor Aceitunas', '5558901234', 'Dirección de las Aceitunas', 'aceitunas@proveedor.com', '¡Las aceitunas frescas y sabrosas de nuestro proveedor son la elección perfecta para tus platos mediterráneos favoritos! Disfruta del sabor auténtico de la región con cada bocado.', 'https://s2.abcstatics.com/media/bienestar/2021/02/23/aceitunas-ko1B--1248x698@abc.jpg'),
+(19, 'Proveedor Aceitunas Negras', '5559012345', 'Dirección de las Aceitunas Negras', 'aceitunasnegras@proveedor.com', 'Las aceitunas negras de nuestro proveedor añaden un toque de elegancia y sabor a cualquier plato. ¡Perfectas para aperitivos, ensaladas y mucho más!', 'https://s2.abcstatics.com/media/bienestar/2021/02/23/aceitunas-ko1B--1248x698@abc.jpg'),
+(20, 'Proveedor Queso Mozzarella', '5550123456', 'Dirección del Queso Mozzarella', 'mozzarella@proveedor.com', '¡El queso mozzarella fresco y cremoso de nuestro proveedor es la estrella de cualquier plato italiano! Fundido sobre una pizza o en una ensalada caprese, cada bocado es una delicia.', 'https://www.lavanguardia.com/files/article_main_microformat/uploads/2019/01/14/5e997adde64f0.jpeg'),
+(21, 'Proveedor Queso Parmesano', '5551234567', 'Dirección del Queso Parmesano', 'parmesano@proveedor.com', '¡El queso parmesano rallado de nuestro proveedor añade un toque de sabor intenso y delicioso a tus platos favoritos! ¡No te resistas a su aroma irresistible!', 'https://media.istockphoto.com/id/471343790/es/foto/queso-parmesano-rallado.jpg?s=612x612&w=0&k=20&c=N7APlTW95rEDGEZMoSdmwx8vnpubdFe7jndrI97spSc='),
+(22, 'Proveedor Queso Cheddar', '5552345678', 'Dirección del Queso Cheddar', 'cheddar@proveedor.com', 'El queso cheddar de nuestro proveedor es la elección perfecta para darle un toque de sabor a tus platos favoritos. ¡Ya sea en una hamburguesa, nachos o macarrones con queso, este queso derretido te hará sonreír!', 'https://quesoteca.com/img/cms/BLOG/Queso-Cheddar-676x386-1[1].jpg'),
+(23, 'Proveedor Queso Gouda', '5553456789', 'Dirección del Queso Gouda', 'gouda@proveedor.com', 'Nuestro queso gouda ahumado es la combinación perfecta de sabor suave y cremoso. ¡Añade un toque de sofisticación a tus platos con este queso holandés clásico!', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDIAeXA1PfuojRVNLTKHOO-zUDPOR6u4zyC-0aIWTrYg&s'),
+(24, 'Proveedor Queso Brie', '5554567890', 'Dirección del Queso Brie', 'brie@proveedor.com', '¡El queso brie suave y cremoso de nuestro proveedor es una verdadera indulgencia para los amantes del queso! Disfruta de su textura sedosa y su sabor delicado en cada bocado.', 'https://www.lavanguardia.com/files/og_thumbnail/uploads/2019/02/26/5e997da01364e.jpeg'),
+(25, 'Proveedor Jamon Serrano', '5555678901', 'Dirección del Jamón Serrano', 'serrano@proveedor.com', '¡El jamón serrano de nuestro proveedor es un clásico español que nunca pasa de moda! Delicadamente curado y lleno de sabor, cada loncha es una delicia.', 'https://www.lacerca.com/imagenes/api_seo_43_thumb/accce88eca67f9822b8deee6e35c76f8.jpg'),
+(26, 'Proveedor Alcarchofa', '5556789012', 'Dirección de la Alcachofa', 'alcachofa@proveedor.com', '¡Las alcachofas frescas y tiernas de nuestro proveedor son la adición perfecta a tus platos! Disfruta de su sabor único y su textura tierna en ensaladas, pastas y mucho más.', 'https://sembralia.com/cdn/shop/articles/alcachofas.jpg?v=1648560489'),
+(27, 'Proveedor Pimiento', '5557890123', 'Dirección del Pimiento', 'pimiento@proveedor.com', 'Los pimientos frescos y coloridos de nuestro proveedor son el toque perfecto para tus platos favoritos. ¡Añade un toque de dulzura y un toque de color a tus recetas con nuestros pimientos frescos!', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXpj5BkQGRa5ovLxUYPBxw_ZWpS7yKeOW8NSvte-_bQ&s'),
+(28, 'Proveedor Nata', '5558901234', 'Dirección de la Nata', 'nata@proveedor.com', '¡Nuestra nata fresca y cremosa es la elección perfecta para tus recetas favoritas! ¡Añade un toque de indulgencia a tus postres, salsas y mucho más con nuestra nata de calidad superior!', 'https://i.blogs.es/105dd8/nata/1366_2000.jpg'),
+(29, 'Proveedor Salchicha', '5559012345', 'Dirección de la Salchicha', 'salchicha@proveedor.com', '¡Nuestras salchichas frescas y sabrosas son la opción perfecta para tus barbacoas y cenas familiares! ¡Añade un toque de sabor a tus platos con nuestras salchichas de calidad premium!', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ZkF5efmSSjiIYGJT6gDcyidKH1wQu3bovjpmZ8hF0g&s'),
+(30, 'Proveedor Pan Durum Sin Gluten', '5550123456', 'Dirección del Pan sin Gluten de Durum', 'pandurum@proveedor.com', '¡Nuestro pan sin gluten de durum es la elección perfecta para aquellos que siguen una dieta sin gluten pero no quieren renunciar al sabor! ¡Disfruta del sabor y la textura de nuestro pan fresco y esponjoso en cada bocado!', 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi68sfmqT3ghy39aCf9vNmZd7XkeL_nc36JdfXLyeSv4DnH22ZyhB8ylXe6Bt3Ae3Mr0T_qUTCfy7U5o7Jm5F8GOCif7xTImi9d2q3ZscXxu5LQfUfiJCAt-EAtIiV5QfYh1DYAAPAmZGw/s1600/durum_singluten.png'),
+(31, 'Proveedor Pan Pita Sin Gluten', '5551234567', 'Dirección del Pan de Pita sin Gluten', 'panpita@proveedor.com', 'El pan de pita sin gluten de nuestro proveedor es la opción perfecta para tus bocadillos y wraps favoritos. ¡Rellena con tus ingredientes preferidos y disfruta de una comida sabrosa y sin gluten!', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAb8RLAlJJXCQk9E77QaIYe5xGYCtDGrzaHjQLQ9Hoqg&s'),
+(32, 'Proveedor Carne Kebab Ternera', '5552345678', 'Dirección de la Carne de Kebab de Ternera', 'carnekebabternera@proveedor.com', '¡La carne de kebab de ternera de nuestro proveedor es la opción perfecta para tus platos de comida rápida favoritos! ¡Preparada con especias tradicionales y asada a la perfección para un sabor auténtico!', ' https://www.benkebab.com/wp-content/uploads/2019/02/dostlar-loncheado-pollo.jpg'),
+(33, 'Proveedor Carne Kebab Pollo', '5553456789', 'Dirección de la Carne de Kebab de Pollo', 'carnekebabpollo@proveedor.com', '¡Nuestra carne de kebab de pollo jugosa y sabrosa es la estrella de tus platos de comida rápida favoritos! ¡Preparada con ingredientes frescos y especias tradicionales para un sabor auténtico!', 'https://www.benkebab.com/wp-content/uploads/2019/02/dostlar-loncheado-pollo.jpg'),
+(34, 'Proveedor Masa Pizza Sin Gluten', '5554567890', 'Dirección de la Masa de Pizza sin Gluten', 'masapizza@proveedor.com', '¡Nuestra masa de pizza sin gluten es la base perfecta para tus creaciones culinarias! ¡Disfruta del sabor y la textura de una deliciosa pizza sin preocuparte por el gluten!', 'https://img-global.cpcdn.com/recipes/5058677479492749/680x482cq70/masa-pizza-sin-gluten-foto-principal.jpg'),
+(35, 'Proveedor lechuga', '5554558490', 'Dirección de las lechuzas', 'lechugas@proveedor.com', '¡Nuestras lechugas frescas y crujientes son la elección perfecta para tus ensaladas y platos favoritos! ¡Añade un toque de frescura y sabor a tus comidas con nuestras lechugas de calidad superior!', 'https://dfinnova.com/wp-content/themes/yootheme/cache/dc/lechugas-dc273b01.jpeg'),
+(36, 'Proveedor Masa Pizza', '5554567899', 'Dirección de la Masa de Pizza', 'masapizza@proveedor.com', '¡Nuestra masa de pizza fresca y esponjosa es la base perfecta para tus creaciones culinarias! ¡Disfruta del sabor y la textura de una deliciosa pizza casera en cada bocado!', 'https://img-global.cpcdn.com/recipes/5058677479492749/680x482cq70/masa-pizza-sin-gluten-foto-principal.jpg'),
+(37, 'Proveedor Pan Durum', '5550123456', 'Dirección del Pan de Durum', 'pandurum@proveedor.com', '¡Nuestro pan de durum es la elección perfecta para aquellos que siguen una dieta! ¡Disfruta del sabor y la textura de nuestro pan fresco y esponjoso en cada bocado!', 'https://www.petitchef.es/imgupl/recipe/receta-pan-kebab-pita--115234p171153.jpg'), 
+(38, 'Proveedor Pan Pita', '5551234567', 'Dirección del Pan de Pita sin Gluten', 'panpita@proveedor.com', 'El pan de pita de nuestro proveedor es la opción perfecta para tus bocadillos y wraps favoritos. ¡Rellena con tus ingredientes preferidos y disfruta de una comida sabrosa!', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAb8RLAlJJXCQk9E77QaIYe5xGYCtDGrzaHjQLQ9Hoqg&s');
+
+
+
+-- Ingredientes
+
+
+
+	-- Insertar datos de ingredientes
+	INSERT INTO ingredientes (ingredientesId, nombre, descripcion, proveedorId) 
+	VALUES 
+	(1, 'Tomate', 'Tomate rojo y jugoso, ideal para ensaladas y salsas frescas.', 1),
+	(2, 'Salmon', 'Salmon atlántico fresco, perfecto para platos gourmet y asados.', 2),
+	(3, 'Gambas', 'Gambas frescas del Mediterráneo, imprescindibles en paellas y mariscadas.', 3),
+	(4, 'SalsaBlanca', 'Deliciosa salsa blanca hecha con leche y mantequilla, ideal para pastas y gratinados.', 	4),
+	(5, 'Ketchup', 'La salsa de tomate ketchup, una clásica acompañante de hamburguesas y patatas fritas.', 5),
+	(6, 'Mayonesa', 'Mayonesa casera con un toque de limón, perfecta para ensaladas y sándwiches.', 6),
+	(7, 'SalsaBarbacoa', 'Salsa barbacoa ahumada con un equilibrio perfecto entre dulzura y picante, ideal para 	carnes a la 	parrilla.', 7),
+	(8, 'Champiñones', 'Champiñones frescos cultivados localmente, excelentes para platos de pasta y guisos.', 	8),
+	(9, 'Pollo', 'Pollo de corral tierno y jugoso, perfecto para asados y platos al horno.', 9),
+	(10, 'CarnePicadaDePollo', 'Carne de pollo picada finamente, ideal para hamburguesas caseras y 	albóndigas.', 10),
+	(11, 'Bacon', 'Bacon ahumado de cerdos criados en libertad, delicioso en desayunos y ensaladas.', 11),
+	(12, 'QuesoCabra', 'Queso de cabra artesanal con un sabor suave y cremoso, excelente en ensaladas y tablas 	de queso.', 12),
+	(13, 'Cebolla', 'Cebolla fresca de cosecha local, perfecta para dar sabor a guisos y sofritos.', 13),
+	(14, 'Ternera', 'Ternera de pastoreo criada de forma sostenible, ideal para filetes y estofados.', 14),
+	(15, 'Patatas', 'Patatas de la variedad agria, perfectas para purés y asados.', 15),
+	(16, 'JamonYork', 'Jamón york magro y tierno, excelente en bocadillos y tortillas.', 16),
+	(17, 'Huevo', 'Huevos frescos de gallinas camperas, fundamentales en repostería y desayunos.', 17),
+	(18, 'Aceitunas', 'Aceitunas verdes rellenas de anchoas, perfectas como aperitivo o en ensaladas 	mediterráneas.', 18),
+	(19, 'AceitunasNegras', 'Aceitunas negras de la variedad kalamata, ideales en pizzas y platos de pasta.', 	19),
+	(20, 'QuesoMozzarella', 'Queso mozzarella fresco de leche de búfala, perfecto para pizzas y ensaladas 	caprese.', 20),
+	(21, 'QuesoParmesano', 'Queso parmesano añejo y fragante, imprescindible en pastas y risottos.', 21),
+	(22, 'QuesoCheddar', 'Queso cheddar madurado y con un sabor pronunciado, ideal para hamburguesas y 	nachos.', 22),
+	(23, 'QuesoGouda', 'Queso gouda suave y cremoso, perfecto para sándwiches y fondue de queso.', 23),
+	(24, 'QuesoBrie', 'Queso brie de corteza blanda y centro cremoso, delicioso en tabla de quesos y bocadillos 	gourmet.', 24),
+	(25, 'JamonSerrano', 'Jamón serrano curado y de sabor intenso, excelente como tapa o en bocadillos.', 25),
+	(26, 'Alcarchofa', 'Alcachofas frescas en conserva, perfectas como guarnición o en ensaladas.', 26),
+	(27, 'Pimiento', 'Pimientos rojos asados y pelados, ideales en platos mediterráneos y antipastos.', 27),
+	(28, 'Nata', 'Nata para cocinar de alta calidad, perfecta para salsas y postres.', 28),
+	(29, 'Salchicha', 'Salchichas frescas de cerdo condimentadas, ideales para parrilladas y guisos.', 29),
+	(30, 'PanSinGlutenDeDurum', 'Pan sin gluten de harina de trigo sarraceno, perfecto para personas con 	intolerancia al gluten.', 30),
+	(31, 'PanDePitaSinGluten', 'Pan de pita sin gluten de garbanzos y tapioca, ideal para wraps y sándwiches 	ligeros.', 31),
+	(32, 'CarneDeKebabDeTernera', 'Carne de kebab de ternera sazonada y en finas tiras, ideal para kebabs y 	gyros.', 32),
+	(33, 'CarneDeKebabDePollo', 'Carne de kebab de pollo adobada y en finas tiras, perfecta para pitas y platos 	de kebab.', 33),
+	(34, 'MasaDePizzaSinGluten', 'Masa de pizza sin gluten de harina de arroz y almidón de maíz, ideal para 	pizzas caseras libres de gluten.', 34),
+	(35, 'Lechuga', 'lechuga recien extraida de la huerta de bugarra por los mejores agricultores.', 35),
+	(36, 'MasaDePizza', 'Masa de pizzade harina de trigo y almidón de maíz, ideal para pizzas caseras .', 36),
+	(37, 'PanDeDurum', 'Pande harina de trigo sarraceno, perfecto para personas.', 37),
+	(38, 'PanDePita', 'Pan de pita de garbanzos y tapioca, ideal para wraps y sándwiches ligeros.', 38);
+
+
+-- productos
+
+
+
+INSERT INTO productos (productoId, nombre, descripcion, precio, tipo, imageUrl) 
+VALUES 
+(1, 'kebab mixto solo carne', 'El mejor kebab de toda la kebaberia los gorjes, con los mejores ingredientes de todo el mercado y con una frescura que haría que un Mentos te parezca poco.', 8, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(2, 'kebab durum completo carne de kebab de pollo', 'Este kebab es como un pollo con esteroides: grande, audaz y listo para impresionar a tu paladar. ¡Te retamos a encontrar un kebab más chispeante en todo el universo!', 9, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(3, 'kebab durum completo con carne de kebab de pollo y de ternera', 'Prepárate para un espectáculo de sabor que hará que tus papilas gustativas se pongan en pie y aplaudan de pie. ¡Un verdadero héroe de la comida rápida!', 10, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(4, 'kebab completo carne de kebab de ternera', 'Si tu boca fuera un estadio, este kebab sería el evento principal. ¡Prepárate para una avalancha de sabor que te dejará sin palabras!', 9, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(5, 'kebab completo carne de kebab de pollo', 'Este kebab es como un pájaro en pleno vuelo: suave, elegante y listo para aterrizar en tu estómago. ¡Una experiencia de sabor que te dejará volando alto!', 9, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(6, 'kebab completo con carne de kebab de pollo y de ternera', 'Este kebab es el rey de la jungla de la comida rápida. ¡Con una mezcla de sabores que te dejará rugiendo de satisfacción!', 10, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(7, 'kebab durum completo carne de kebab de ternera sin gluten', '¿Quieres un kebab que sea tan increíble como tú? ¡Entonces este es el kebab para ti! Sin gluten, pero con un sabor que te hará sentir en la cima del mundo.', 10, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(8, 'kebab durum completo carne de kebab de pollo sin gluten', 'Este kebab es como una fiesta en tu boca, ¡y todos están invitados! Sin gluten pero con un sabor que hará que tus papilas gustativas bailen de alegría.', 10, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(9, 'kebab durum completo con carne de kebab de pollo y de ternera sin gluten', '¿Quién dijo que los kebabs sin gluten son aburridos? ¡Este kebab te hará olvidar que estás comiendo sin gluten con cada bocado lleno de sabor!', 11, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(10, 'kebab completo carne de kebab de ternera sin gluten', 'Este kebab es como un rayo de sol en un día nublado: te levantará el ánimo y te dejará con una sonrisa en la cara. ¡Sin gluten pero con todo el sabor que esperas de un kebab de los Gorjes!', 10, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(11, 'kebab completo carne de kebab de pollo sin gluten', '¿Quién dijo que los kebabs sin gluten son aburridos? ¡Este kebab te hará olvidar que estás comiendo sin gluten con cada bocado lleno de sabor!', 10, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(12, 'kebab completo con carne de kebab de pollo y de ternera sin gluten', '¿Preocupado por perder sabor al eliminar el gluten? ¡No te preocupes más! Este kebab sin gluten está lleno de tantos sabores deliciosos que no notarás la diferencia. ¡Listo para impresionar incluso a los paladares más exigentes!', 11, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(13, 'kebab solo carne de kebab de ternera', 'Este kebab es tan tierno y jugoso que te hará desear que fueras una vaca solo para saber cómo se siente. ¡Prepárate para un viaje a la tierra de la delicia!', 7, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(14, 'kebab solo carne de kebab de pollo', 'Este kebab es como una explosión de sabor en tu boca, ¡con cada bocado lleno de pollo jugoso y delicioso! ¡Una experiencia de sabor que te hará desear que el tiempo se detenga!', 7, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(15, 'kebab con patatas solo carne de kebab de ternera', 'Este kebab es como un abrazo de tu madre en forma de comida: cálido, reconfortante y lleno de amor. ¡Con la adición de patatas crujientes para un toque extra de satisfacción!', 9, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(16, 'kebab con patatas solo carne de kebab de pollo', 'Este kebab es como una fiesta en tu boca, con cada bocado lleno de sabor y textura. ¡Con la adición de patatas crujientes para una experiencia aún más deliciosa!', 9, 1, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(17, 'kebab solo carne de kebab de ternera sin gluten', 'Este kebab sin gluten es como una ola de frescura que golpea tu paladar. ¡Con carne de ternera jugosa y tierna que hará que tus papilas gustativas se sientan en la cima del mundo!', 8, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(18, 'kebab solo carne de kebab de pollo sin gluten', 'Este kebab sin gluten es como una explosión de sabor en tu boca, ¡con cada bocado lleno de pollo jugoso y delicioso! ¡Una experiencia de sabor que te hará desear que el tiempo se detenga!', 8, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(19, 'kebab con patatas solo carne de kebab de ternera sin gluten', 'Este kebab sin gluten es como un abrazo de tu madre en forma de comida: cálido, reconfortante y lleno de amor. ¡Con la adición de patatas crujientes para un toque extra de satisfacción!', 10, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg'),
+(20, 'kebab con patatas solo carne de kebab de pollo sin gluten', 'Este kebab sin gluten es como una fiesta en tu boca, con cada bocado lleno de sabor y textura. ¡Con la adición de patatas crujientes para una experiencia aún más deliciosa!', 10, 4, 'https://explora.jijonaturismo.com/wp-content/sabai/File/files/l_f46070e7ac687c5425fb75d13a34ec29.jpg');
+
+
+
+-- Kebab durum completo carne de kebab de pollo
+INSERT INTO producto_ingrediente(productoId, ingredientesId) 
+VALUES 
+(1, 32), (1, 33), (1, 35), (1, 1), -- producto 1
+(2, 33), -- Carne de kebab de pollo
+(2, 35), -- Lechuga
+(2, 4),  -- Salsa blanca
+(2, 1),  -- Tomate
+(2, 37); -- Pan durum
+
+-- Kebab durum completo con carne de kebab de pollo y de ternera
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(3, 32), -- Carne de kebab de ternera
+(3, 33), -- Carne de kebab de pollo
+(3, 35), -- Lechuga
+(3, 4),  -- Salsa blanca
+(3, 1),  -- Tomate
+(3, 37); -- Pan durum
+
+-- Kebab completo carne de kebab de ternera
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(4, 32), -- Carne de kebab de ternera
+(4, 35), -- Lechuga
+(4, 4),  -- Salsa blanca
+(4, 1),  -- Tomate
+(4, 38); -- Pan de pita
+
+-- Kebab completo carne de kebab de pollo
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(5, 33), -- Carne de kebab de pollo
+(5, 35), -- Lechuga
+(5, 4),  -- Salsa blanca
+(5, 1),  -- Tomate
+(5, 38); -- Pan de pita
+
+-- Kebab completo con carne de kebab de pollo y de ternera
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(6, 32), -- Carne de kebab de ternera
+(6, 33), -- Carne de kebab de pollo
+(6, 35), -- Lechuga
+(6, 4),  -- Salsa blanca
+(6, 1),  -- Tomate
+(6, 38); -- Pan de pita
+
+-- Kebab durum completo carne de kebab de ternera sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(7, 32),  -- Carne de kebab de ternera
+(7, 35),  -- Lechuga
+(7, 4),   -- Salsa blanca
+(7, 1),   -- Tomate
+(7, 31);  -- Pan de pita sin gluten
+
+-- Kebab durum completo carne de kebab de pollo sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(8, 33),  -- Carne de kebab de pollo
+(8, 35),  -- Lechuga
+(8, 4),   -- Salsa blanca
+(8, 1),   -- Tomate
+(8, 31);  -- Pan de pita sin gluten
+
+-- Kebab durum completo con carne de kebab de pollo y de ternera sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(9, 32),  -- Carne de kebab de ternera
+(9, 33),  -- Carne de kebab de pollo
+(9, 35),  -- Lechuga
+(9, 4),   -- Salsa blanca
+(9, 1),   -- Tomate
+(9, 31);  -- Pan de pita sin gluten
+
+-- Kebab completo carne de kebab de ternera sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(10, 32), -- Carne de kebab de ternera
+(10, 35), -- Lechuga
+(10, 4),  -- Salsa blanca
+(10, 1),  -- Tomate
+(10, 31); -- Pan de pita sin gluten
+
+-- Kebab completo carne de kebab de pollo sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(11, 33), -- Carne de kebab de pollo
+(11, 35), -- Lechuga
+(11, 4),  -- Salsa blanca
+(11, 1),  -- Tomate
+(11, 31); -- Pan de pita sin gluten
+
+-- Kebab completo con carne de kebab de pollo y de ternera sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(12, 32), -- Carne de kebab de ternera
+(12, 33), -- Carne de kebab de pollo
+(12, 35), -- Lechuga
+(12, 4),  -- Salsa blanca
+(12, 1),  -- Tomate
+(12, 31), -- Pan de pita sin gluten
+
+(13, 32), -- Carne de kebab de ternera
+(13, 4),  -- Salsa blanca
+(13, 10); -- Ketchup
+
+-- Kebab solo carne de kebab de pollo
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(14, 33), -- Carne de kebab de pollo
+(14, 4),  -- Salsa blanca
+(14, 10), -- Ketchup
+(14, 38);
+
+-- Kebab con patatas solo carne de kebab de ternera
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(15, 32), -- Carne de kebab de ternera
+(15, 31), -- Pan de pita
+(14, 38),
+(15, 28); -- Patatas
+
+-- Kebab con patatas solo carne de kebab de pollo
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(16, 33), -- Carne de kebab de pollo
+(16, 38), -- Pan de pita
+(16, 28); -- Patatas
+
+-- Kebab solo carne de kebab de ternera sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(17, 32), -- Carne de kebab de ternera
+(17, 4),  -- Salsa blanca
+(14, 31),
+(17, 10); -- Ketchup
+
+-- Kebab solo carne de kebab de pollo sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(18, 33), -- Carne de kebab de pollo
+(18, 4),  -- Salsa blanca
+(14, 31),
+(18, 10); -- Ketchup
+
+-- Kebab con patatas solo carne de kebab de ternera sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(19, 32), -- Carne de kebab de ternera
+(19, 31), -- Pan de pita sin gluten
+(19, 28); -- Patatas
+
+-- Kebab con patatas solo carne de kebab de pollo sin gluten
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(20, 33), -- Carne de kebab de pollo
+(20, 31), -- Pan de pita sin gluten
+(20, 28); -- Patatas
+
+
+
+
+-- Pizzas
+
+
+INSERT INTO productos (productoId, nombre, descripcion, precio, tipo, imageUrl) 
+VALUES 
+(21, 'La Clásica', 'Una pizza que te transportará a la auténtica esencia de la cocina italiana. ¡Prepárate para una explosión de sabores clásicos!', 9.99, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(22, 'Gambereti', 'Una pizza para los amantes del mar. Con cada bocado sentirás el frescor del océano y el sabor único del salmón y las gambas.', 11.99, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(23, 'Gorjes 1', 'Una explosión de sabores que te dejará sin aliento. Con su combinación única de ingredientes, esta pizza te hará desear más con cada bocado.', 10.49, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(24, 'Bandido', 'Una pizza tan deliciosa que te hará sentir como un forajido de la cocina. ¡Prepárate para un atraco de sabor!', 10.99, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(25, 'Napolitana', 'Una pizza que te llevará directamente a las calles de Nápoles. ¡Con cada bocado, sentirás el sol y el sabor del Mediterráneo!', 9.79, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(26, 'Napol', 'Una pizza tan clásica como sabrosa. ¡Prepárate para un viaje a través de los sabores de Italia con esta deliciosa pizza!', 9.99, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(27, '6 Quesos', 'Una pizza que hará que los amantes del queso se derritan de placer. ¡Con una mezcla de seis quesos diferentes, esta pizza es una verdadera obra de arte culinaria!', 12.49, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(28, 'Casa Los Gorjes', 'Una pizza para los verdaderos amantes de la carne. ¡Con una combinación única de carne de kebab de ternera, carne de kebab de pollo y salsa blanca, esta pizza te hará desear más con cada bocado!', 11.99, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(29, 'Romana', 'Una pizza con un toque italiano moderno. ¡Con una mezcla única de salsa barbacoa, tomate, bacon y pollo, esta pizza es una explosión de sabores que no puedes perderte!', 10.99, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(30, 'Vegetariana', 'Una pizza que hará que incluso los amantes de la carne se vuelvan vegetarianos por un día. ¡Con una mezcla de champiñones, aceitunas negras y alcachofas, esta pizza es una verdadera delicia!', 10.49, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(31, 'Carbonara 2', 'Una pizza para los amantes de la pasta carbonara. ¡Con una mezcla única de salsa carbonara, champiñones, bacon y huevo, esta pizza te hará desear que el almuerzo nunca termine!', 11.49, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(32, 'Carbonara', 'Una pizza con un toque italiano moderno. ¡Con una mezcla única de salsa de tomate, nata, mozzarella, bacon y cebolla, esta pizza es una verdadera delicia para los amantes de la cocina italiana!', 11.99, 2, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(33, 'La Clásica sin gluten', 'Una versión sin gluten de la clásica pizza italiana. ¡Con carne picada, bacon, cebolla, queso de cabra y masa de pizza sin gluten, esta pizza es perfecta para los amantes de la pizza que quieren evitar el gluten!', 10.99, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(34, 'Gambereti sin gluten', 'Una pizza sin gluten para los amantes del mar. ¡Con tomate, salmón, gambas y masa de pizza sin gluten, esta pizza es perfecta para aquellos que quieren disfrutar del sabor del mar sin preocuparse por el gluten!', 12.99, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(35, 'Gorjes 1 sin gluten', 'Una versión sin gluten de la popular pizza Gorjes 1. ¡Con salsa barbacoa, champiñones, pollo, tomate y masa de pizza sin gluten, esta pizza es una delicia para todos los amantes de la pizza!', 11.49, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(36, 'Bandido sin gluten', 'Una pizza sin gluten para los amantes de los sabores clásicos. ¡Con masa de pizza sin gluten, tomate, jamón york, bacon y huevo, esta pizza es perfecta para aquellos que quieren disfrutar de los sabores clásicos de la pizza sin gluten!', 11.99, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(37, 'Napolitana sin gluten', 'Una versión sin gluten de la clásica pizza napolitana. ¡Con masa de pizza sin gluten, tomate, jamón york y queso de cabra, esta pizza es perfecta para aquellos que quieren disfrutar del sabor de Italia sin gluten!', 10.99, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(38, 'Napol sin gluten', 'Una versión sin gluten de la popular pizza Napol. ¡Con tomate, jamón york, bacon, huevo y masa de pizza sin gluten, esta pizza es perfecta para aquellos que quieren disfrutar del sabor de la pizza sin gluten!', 11.49, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(39, '6 Quesos sin gluten', 'Una versión sin gluten de la popular pizza 6 Quesos. ¡Con una mezcla de seis quesos diferentes, masa de pizza sin gluten y tomate, esta pizza es perfecta para los amantes del queso que quieren evitar el gluten!', 13.49, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(40, 'Casa Los Gorjes sin gluten', 'Una versión sin gluten de la popular pizza Casa Los Gorjes. ¡Con carne de kebab de ternera, carne de kebab de pollo, salsa blanca y masa de pizza sin gluten, esta pizza es perfecta para aquellos que quieren disfrutar del sabor de la pizza sin gluten!', 12.49, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(41, 'Romana sin gluten', 'Una versión sin gluten de la popular pizza Romana. ¡Con salsa barbacoa, masa de pizza sin gluten, tomate, bacon y pollo, esta pizza es perfecta para aquellos que quieren disfrutar del sabor de la pizza sin gluten!', 11.99, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(42, 'Vegetariana sin gluten', 'Una versión sin gluten de la popular pizza Vegetariana. ¡Con tomate, masa de pizza sin gluten, champiñones, aceitunas negras y alcachofas, esta pizza es perfecta para aquellos que quieren disfrutar del sabor de la pizza sin gluten!', 11.49, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(43, 'Carbonara 2 sin gluten', 'Una versión sin gluten de la popular pizza Carbonara 2. ¡Con salsa carbonara, masa de pizza sin gluten, champiñones, bacon y huevo, esta pizza es perfecta para aquellos que quieren disfrutar del sabor de la pizza sin gluten!', 12.49, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg'),
+(44, 'Carbonara sin gluten', 'Una versión sin gluten de la popular pizza Carbonara. ¡Con tomate, nata, mozzarella, bacon, cebolla y masa de pizza sin gluten, esta pizza es perfecta para aquellos que quieren disfrutar del sabor de la pizza sin gluten!', 12.99, 4, 'https://static.barcelo.com/content/dam/bpt/posts/2023/4/mejores%20pizzas%20italia.jpg');
+
+
+-- Ingredientes de La Clásica
+INSERT INTO producto_ingrediente(productoId, ingredientesId)
+VALUES 
+(21, 1),
+(21, 11),
+(21, 12),
+(21, 22),
+(21, 23),
+(21, 24),
+(21, 36);
+
+-- Ingredientes de Gambereti
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(22, 1),
+(22, 20),
+(22, 29),
+(22, 36);
+
+-- Ingredientes de Gorjes 1
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(23, 6),
+(23, 14),
+(23, 15),
+(23, 1),
+(23, 36);
+
+-- Ingredientes de Bandido
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(24, 36),
+(24, 1),
+(24, 16),
+(24, 11),
+(24, 17);
+
+-- Ingredientes de Napolitana
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(25, 36),
+(25, 1),
+(25, 16),
+(25, 22);
+
+-- Ingredientes de Napol
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(26, 1),
+(26, 16),
+(26, 11),
+(26, 17),
+(26, 36);
+
+-- Ingredientes de 6 Quesos
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(27, 1),
+(27, 20),
+(27, 21),
+(27, 22),
+(27, 23),
+(27, 24),
+(27, 36);
+
+-- Ingredientes de Casa Los Gorjes
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(28, 32),
+(28, 33),
+(28, 4),
+(28, 36);
+
+-- Ingredientes de Romana
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(29, 6),
+(29, 36),
+(29, 1),
+(29, 11),
+(29, 15);
+
+-- Ingredientes de Vegetariana
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(30, 1),
+(30, 36),
+(30, 14),
+(30, 18),
+(30, 23);
+
+-- Ingredientes de Carbonara 2
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(31, 7),
+(31, 36),
+(31, 14),
+(31, 11),
+(31, 17);
+
+-- Ingredientes de Carbonara
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(32, 1),
+(32, 8),
+(32, 30),
+(32, 11),
+(32, 12);
+
+-- Ingredientes de La Clásica sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(33, 1),
+(33, 11),
+(33, 12),
+(33, 22),
+(33, 23),
+(33, 24),
+(33, 36);
+
+-- Ingredientes de Gambereti sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(34, 1),
+(34, 20),
+(34, 29),
+(34, 36);
+
+-- Ingredientes de Gorjes 1 sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(35, 6),
+(35, 14),
+(35, 15),
+(35, 1),
+(35, 36);
+
+-- Ingredientes de Bandido sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(36, 36),
+(36, 1),
+(36, 16),
+(36, 11),
+(36, 17);
+
+-- Ingredientes de Napolitana sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(37, 36),
+(37, 1),
+(37, 16),
+(37, 22);
+
+-- Ingredientes de Napol sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(38, 1),
+(38, 16),
+(38, 11),
+(38, 17),
+(38, 36);
+
+-- Ingredientes de 6 Quesos sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(39, 1),
+(39, 20),
+(39, 21),
+(39, 22),
+(39, 23),
+(39, 24),
+(39, 36);
+
+-- Ingredientes de Casa Los Gorjes sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(40, 32),
+(40, 33),
+(40, 4),
+(40, 36);
+
+-- Ingredientes de Romana sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(41, 6),
+(41, 36),
+(41, 1),
+(41, 11),
+(41, 15);
+
+-- Ingredientes de Vegetariana sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(42, 1),
+(42, 36),
+(42, 14),
+(42, 18),
+(42, 23);
+
+-- Ingredientes de Carbonara 2 sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(43, 7),
+(43, 36),
+(43, 14),
+(43, 11),
+(43, 17);
+
+-- Ingredientes de Carbonara sin gluten
+INSERT INTO producto_ingrediente (productoId, ingredientesId)
+VALUES 
+(44, 1),
+(44, 8),
+(44, 30),
+(44, 11),
+(44, 12);
+
+
+
+-- bebidas
+
+
+INSERT INTO productos (productoId, nombre, descripcion, precio, tipo, imageUrl)
+VALUES 
+(45, 'Cerveza', 'Una cerveza fría y refrescante de 33cl.', 1.70, 3, 'https://www.opepinho.com/s/wp-content/uploads/2020/11/cerveza-artesana-o-pepino-33cl-vaso-personalizado.jpg'),
+(46, 'Fanta de Naranja', 'Una refrescante Fanta de Naranja en formato de 33cl.', 1, 3, 'https://flimar.com/2010-large_default/fanta-naranja-lata-33cl.jpg'),
+(47, 'Fanta de Naranja Zero', 'Una opción sin azúcar de la refrescante Fanta de Naranja en formato de 33cl.', 1, 3, 'https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202310/05/00118611600158____13__600x600.jpg'),
+(48, 'Coca-Cola', 'La clásica Coca-Cola en formato de 33cl.', 1, 3, 'https://valsegura.com/wp-content/uploads/2016/02/cc-33cl.jpg'),
+(49, 'Coca-Cola Zero', 'La Coca-Cola Zero en formato de 33cl.', 1, 3, 'https://pollossanjuan.es/wp-content/uploads/2018/04/cocacolazero_lata.jpg'),
+(50, 'Coca-Cola Zero Zero', 'La Coca-Cola Zero Zero en formato de 33cl.', 1, 3, 'https://deor.es/7862-medium_default/cocacola-zero-zero-lata-33cl-24-uds.jpg'),
+(51, 'Monster', 'Una bebida energética Monster de 25cl.', 2, 3, 'https://m.media-amazon.com/images/I/815ZR4Ceb+S.jpg'),
+(52, 'Aquarius', 'Una bebida refrescante de sabor a naranja de 50cl.', 1, 3, 'https://www.dragonoriental.com/966-home_default/aquarius-330ml.jpg'),
+(53, 'Agua Mineral', 'Agua mineral natural en formato de 50cl.', 1, 3, 'https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202306/19/00118630000539____5__600x600.jpg'),
+(54, 'Sprite', 'Refresco de limón en formato de 33cl.', 1, 3, 'https://www.coca-cola.com/content/dam/onexp/es/es/sprite/es_sprite_750x750.jpeg'),
+(55, 'Té Helado', 'Té helado de limón en formato de 33cl.', 1, 3, 'https://imag.bonviveur.com/te-helado.jpg');
+
+
+-- usuarios
+
+-- tabla user
+INSERT INTO user (userId, direccion, codigoPostal, pueblo, nombre, apellidos, telefono, email, password)
+VALUES 
+(1, 'Calle de la huerta de bugarra', '46960', 'Madrid', 'Isrra', 'Manuel', '123456789', 'isrramanuel@losgorjes.com', '123456789'),
+(2, 'Avenida de la Libertad 456', '46970', 'Sevilla', 'Toti', 'González', '987654321', 'toti@losgorjes.com', '123456789');
+
+INSERT INTO producto_user (productoId, userId)
+VALUES 
+(21, 1),  -- Producto: La Clásica, Usuario: isrra
+(22, 2);  -- Producto: Gambereti, Usuario: toti
+
+

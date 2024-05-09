@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../models/product';
 import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { ProductService } from '../../services/product.service';
-import { ProductosComponent } from '../productos/productos.component';
 
 @Component({
   selector: 'app-detalle-producto',
   standalone: true,
-  imports: [RouterOutlet, ProductosComponent],
+  imports: [RouterOutlet],
   templateUrl: './detalle-producto.component.html',
 })
 export class DetalleProductoComponent implements OnInit {
@@ -29,10 +28,7 @@ export class DetalleProductoComponent implements OnInit {
         this.productService.getProductById(id)
           .subscribe(
             (response: any) => {
-              // Mapear los nombres de los ingredientes
               const ingredientes = response.data.ingredientes.map((ingrediente: any) => ingrediente.nombreIngrediente);
-
-              // Crear un nuevo objeto Product con los datos del producto y los nombres de los ingredientes
               this.producto = {
                 productoId: response.data.productoId,
                 nombre: response.data.nombre,
@@ -61,7 +57,7 @@ export class DetalleProductoComponent implements OnInit {
       let cartItems: Product[] = JSON.parse(localStorage.getItem('cartItems') || '[]');
       cartItems.push(this.producto);
       localStorage.setItem('cartItems', JSON.stringify(cartItems));
-      this.router.navigate(['/productos']); // Redirige al componente del carrito
+      this.router.navigate(['/productos']);
     }
   }
 }

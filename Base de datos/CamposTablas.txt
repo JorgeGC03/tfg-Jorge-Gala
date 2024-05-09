@@ -1,0 +1,58 @@
+Proveedor-> 
+
+-id
+-nombre
+-contacto
+-direccion
+-email
+
+Se relaciona con ingredientes
+
+Ingredientes->
+
+-id
+-nombre
+-descripción 
+-proveedorId
+
+Productos->
+
+-id
+-nombre
+-descripcion
+-precio
+-list<Ingredientes>
+-tipo-> int (si es tipo 1 seran kebabs, si es tipo 2 seran pizzas y si es tipo 3 son bebidas)
+
+producto_ingrediente->
+id
+productoId
+ingredientesId
+(esta tabla relaciona productos con ingredientes)
+
+user->
+-id
+-direccion
+-codigoPostal
+-pueblo
+-nombre
+-apellidos
+-telefono
+-email
+-password
+
+producto_user->
+-id
+-productoId
+-userId
+-cantidad
+(esta tabla relaciona producto con user)
+la contraseña se debera proteger con JWT security token en springboot
+
+
+
+
+
+
+
+

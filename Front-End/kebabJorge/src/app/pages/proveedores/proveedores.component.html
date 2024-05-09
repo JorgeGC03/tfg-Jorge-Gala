@@ -1,11 +1,11 @@
-<h1 class="c-titulo-principal g--margin-bottom-8">Mi Carrito</h1>
+<h1 class="c-titulo-principal g--margin-bottom-8">Mis proveedores</h1>
 <hr />
 <div class="l-centrar">
     <div class=" g--margin-top-8">
         @if(proveedores.length > 0){
             <div class="c-listadoProductos c-boxshadow g--margin-bottom-8">
                 <div class="l-columns l-columns--3@tablet l-columns--4@desktop">
-                    @for (proveedor of proveedores; track proveedores){
+                    @for (proveedor of proveedores; track proveedores) {
                     <div class="l-columns l-columns--1@tablet">
                         <img class="c-cart-product__image" [src]="proveedor.imageUrl" alt="{{ proveedor.nombre }}">
                     </div>

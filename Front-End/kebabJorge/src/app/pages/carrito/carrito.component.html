@@ -1,19 +1,23 @@
 <div class="c-titulo-principal g-padding-top-8 g--margin-bottom-8">Mi Carrito</div>
 <hr />
 <div class="l-centrar">
-    <div class=" g--margin-top-8">
+    <div class="g--margin-top-8">
         @if(cartItems.length > 0){
             <div class="c-listadoProductos c-boxshadow g--margin-bottom-8">
-                <div class="l-columns l-columns--3@tablet l-columns--4@desktop">
-                    @for (item of cartItems; track cartItems ;let i = $index){
-                    <div class="l-columns l-columns--1@tablet">
-                        <img class="c-cart-product__image" [src]="item.imageUrl" alt="{{ item.nombre }}">
-                    </div>
-                    <div class="c-cart-product l-columns__area--span-2@tablet l-columns__area--span-3@desktop">
-                        <div class="c-titulo__secundario g-padding-top-10"><b>{{ item.nombre.toUpperCase() }}</b></div>
-                        <div class="c-titulo__subtitulo g--margin-top-7">{{ item.descripcion }}</div>
-                        <div class="c-titulo__subtitulo g--margin-top-7"><b>Precio: </b>{{ item.precio }} €</div>
-                        <div>
+                @for (item of cartItems; track cartItems ;let i = $index){
+                    <div class="l-columns l-columns--3@tablet l-columns--4@desktop g--margin-bottom-13">
+                        <div class="l-columns l-columns--2@tablet g--margin-right-13">
+                            <img class="c-cart-product__image" [src]="item.imageUrl" alt="{{ item.nombre }}">
+                        </div>
+                        <div class="c-cart-product l-columns__area--span-2@tablet l-columns__area--span-3@desktop">
+                            <div class="c-titulo__secundario g-padding-top-10"><b>{{ item.nombre.toUpperCase() }}</b></div>
+                            <div class="c-titulo__subtitulo g--margin-top-7">{{ item.descripcion }}</div>
+                            <div class="c-titulo__subtitulo g--margin-top-7"><b>Precio: </b>{{ item.precio }} €</div>
+                        <div class="c-formulario">
+                            <label for="edit-user-comments" class="control-label">Comentarios </label>
+                            <textarea class="c-listadoProductos c-boxshadow" name="user_comments" rows="8"></textarea>
+                        </div>
+                        <div class="g-margin-bottom-10">
                             <b>Cantidad: </b>
                             <button class="c-boton__option-cart  g--margin-top-7"
                                 (click)="decreaseQuantity(i)">-</button>
@@ -21,12 +25,12 @@
                             <button class="c-boton__option-cart" (click)="increaseQuantity(i)">+</button>
                         </div>
                         <div class="l-centrar__derecha g-padding-right-20">
-                            <button class="c-boton__option-cart c-boton__option-cart--borrar  g--margin-top-7"
+                            <button class="c-boton__option-cart c-boton__option-cart--borrar"
                                 (click)="removeFromCart(i)">Eliminar</button>
                         </div>
+                        </div>
                     </div>
-                    }
-                </div>
+                }
                 <div class="l-centrar__derecha">
                     <div class=" g--margin-right-10 g--margin-bottom-5 c-titulo__secundario">
                         Total: {{ totalPrice }} €

@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:4200, http://localhost:8081") // Cambia esto al origen correcto de tu aplicación Angular
+                        .allowedOrigins("http://localhost:4200, http://localhost:8081")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowCredentials(true);
             }

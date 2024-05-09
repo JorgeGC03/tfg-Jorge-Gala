@@ -21,8 +21,8 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring")
-public interface ProductMapper {
+    @Mapper(componentModel = "spring")
+    public interface ProductMapper {
 
     ProductMapper mapper = Mappers.getMapper(ProductMapper.class);
 

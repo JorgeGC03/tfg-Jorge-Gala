@@ -1,0 +1,69 @@
+DROP DATABASE kebabjorge;
+
+-- Crear la base de datos si no existe
+CREATE DATABASE IF NOT EXISTS kebabjorge;
+
+-- Usar la base de datos kebab
+USE kebabjorge;
+
+-- Tabla Proveedor
+CREATE TABLE IF NOT EXISTS Proveedor (
+    proveedorId INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    contacto VARCHAR(100),
+    direccion VARCHAR(255),
+    email VARCHAR(100),
+    descripcion VARCHAR(400),
+    imageUrl VARCHAR(255)
+);
+
+-- Tabla Ingredientes
+CREATE TABLE IF NOT EXISTS Ingredientes (
+    ingredientesId INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    descripcion TEXT,
+    proveedorId INT,
+    FOREIGN KEY (proveedorId) REFERENCES Proveedor(proveedorId)
+);
+
+-- Tabla Productos
+CREATE TABLE IF NOT EXISTS Productos (
+    productoId INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    descripcion TEXT,
+    precio DECIMAL(10,2),
+    tipo INT,
+    imageUrl VARCHAR(255)
+);
+
+-- Tabla Producto_Ingrediente
+CREATE TABLE IF NOT EXISTS Producto_Ingrediente (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    productoId INT,
+    ingredientesId INT,
+    FOREIGN KEY (productoId) REFERENCES Productos(productoId),
+    FOREIGN KEY (ingredientesId) REFERENCES Ingredientes(ingredientesId)
+);
+
+-- Tabla User
+CREATE TABLE IF NOT EXISTS User (
+    Userid INT AUTO_INCREMENT PRIMARY KEY,
+    direccion VARCHAR(255),
+    codigoPostal VARCHAR(20),
+    pueblo VARCHAR(100),
+    nombre VARCHAR(100),
+    apellidos VARCHAR(100),
+    telefono VARCHAR(20),
+    email VARCHAR(100),
+    password VARCHAR(255) -- Aquí se almacenará la contraseña hasheada
+);
+
+-- Tabla Producto_User
+CREATE TABLE IF NOT EXISTS Producto_User (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    productoId INT,
+    userId INT,
+    -- cantidad INT,
+    FOREIGN KEY (productoId) REFERENCES Productos(productoId),
+    FOREIGN KEY (userId) REFERENCES User(UserId)
+);
